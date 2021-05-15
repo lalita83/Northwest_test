@@ -1,0 +1,18 @@
+<!doctype html>
+<html>
+    <head>
+        <title> Javascript Fetching the API</title>
+    </head>
+    <body>
+        <button id="todo" onclick="FetchTodo()">Fetch Todo</button>
+    </body>
+    <script>
+    function FetchTodo(){
+    //Get Request
+    fetch("https://jsonplaceholder.typicode.com/todos/1")
+    .then(funtion(data){
+        console.log(data)
+    })
+}
+    </script>
+</html>
